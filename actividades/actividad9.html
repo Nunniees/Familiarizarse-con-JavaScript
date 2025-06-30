@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 9: Calculadora simple</title>
+</head>
+<body>
+<script>
+  function calcular(a, b, operacion) {
+    if (operacion === "+") return a + b;
+    else if (operacion === "-") return a - b;
+    else if (operacion === "*") return a * b;
+    else if (operacion === "/") return b !== 0 ? a / b : "No es posible dividir entre cero";
+    else return "Operación desconocida";
+  }
+
+  let num1 = parseFloat(prompt("Dame el primer valor:"));
+  let num2 = parseFloat(prompt("Dame el segundo valor:"));
+  let op = prompt("¿Qué operación deseas realizar? (+, -, *, /):");
+
+  alert(`El resultado es: ${calcular(num1, num2, op)}`);
+</script>
+</body>
+</html>

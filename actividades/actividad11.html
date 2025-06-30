@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 11: Generador de ficha personal</title>
+</head>
+<body>
+<script>
+  function crearFicha(nombre, edad, ciudad) {
+    return {
+      nombre: nombre,
+      edad: edad,
+      ciudad: ciudad
+    };
+  }
+
+  function mostrarFicha(ficha) {
+    return `Nombre: ${ficha.nombre}\nEdad: ${ficha.edad}\nCiudad: ${ficha.ciudad}`;
+  }
+
+  let nombre = prompt("¿Cómo te llamas?");
+  let edad = parseInt(prompt("¿Edad actual?"));
+  let ciudad = prompt("¿De qué ciudad eres?");
+
+  let fichaUsuario = crearFicha(nombre, edad, ciudad);
+  alert(mostrarFicha(fichaUsuario));
+</script>
+</body>
+</html>

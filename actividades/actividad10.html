@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 10: Chequeo de mayoría de edad</title>
+</head>
+<body>
+<script>
+  function esMayorDeEdad(edad) {
+    return edad >= 18;
+  }
+
+  let edad = parseInt(prompt("¿Cuántos años tienes?"));
+
+  if (esMayorDeEdad(edad)) {
+    alert("Acceso permitido. Eres mayor de edad.");
+  } else {
+    alert("Acceso denegado. Debes ser mayor de 18 años.");
+  }
+</script>
+</body>
+</html>

@@ -1,13 +1,13 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
+  background: #fff1de;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #2b3a55;
-  color: white;
+  background: #03A6A1;
+  color: #FFE3BB;
   padding: 30px 0 20px 0;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -20,12 +20,12 @@ h1 {
 
 p {
   margin: 0 0 20px 0;
-  color: #e0e0e0;
+  color: #FFE3BB;
 }
 
 main {
   max-width: 550px;
-  background: white;
+  background: #FFA673;
   margin: 40px auto 0 auto;
   border-radius: 10px;
   box-shadow: 0 3px 15px rgba(0,0,0,0.10);
@@ -45,26 +45,26 @@ li {
 a {
   display: block;
   text-decoration: none;
-  background: #f2f4f8;
-  color: #2b3a55;
+  background: #FFE3BB;
+  color: #FF4F0F;
   padding: 16px 18px;
   border-radius: 7px;
   font-size: 1.08rem;
   transition: background 0.18s, color 0.18s;
-  border: 1px solid #e2e7ee;
+  border: 1px solid #FFE3BB;
   font-weight: 500;
 }
 
 a:hover {
-  background: #424097;
-  color: white;
-  border-color: #2b3a55;
+  background: #FF4F0F;
+  color: #FFE3BB;
+  border-color: #da4711;
 }
 
 .actividad-num {
   font-weight: bold;
   margin-right: 10px;
-  color: #4b6c9a;
+  color: #FFA673;
 }
 
 @media (max-width: 600px) {
