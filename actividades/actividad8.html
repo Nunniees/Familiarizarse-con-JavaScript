@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 8: Saludo a usuario</title>
+</head>
+<body>
+<script>
+  function saludar(nombre) {
+    let hora = new Date().getHours();
+    let mensaje;
+    if (hora >= 6 && hora < 12) {
+      mensaje = "¡Buen día";
+    } else if (hora >= 12 && hora < 20) {
+      mensaje = "¡Buenas tardes";
+    } else {
+      mensaje = "¡Buenas noches";
+    }
+    return `${mensaje}, ${nombre}! Espero que disfrutes JavaScript.`;
+  }
+
+  let usuario = prompt("¿Cuál es tu nombre?");
+  console.log(saludar(usuario));
+</script>
+</body>
+</html>

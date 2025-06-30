@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 4: Recorrido de frutas</title>
+</head>
+<body>
+<script>
+  let frutas = ["Manzana", "Banana", "Pera", "Uva"];
+
+  frutas.forEach((fruta, idx) => {
+    console.log(`Fruta número ${idx + 1}: ${fruta}`);
+  });
+
+  let nuevaFruta = prompt("¿Qué fruta te gustaría agregar?");
+  if (nuevaFruta) {
+    frutas.push(nuevaFruta);
+    console.log("Lista de frutas actualizada:");
+    frutas.forEach((fruta, idx) => {
+      console.log(`Fruta número ${idx + 1}: ${fruta}`);
+    });
+  }
+</script>
+</body>
+</html>
